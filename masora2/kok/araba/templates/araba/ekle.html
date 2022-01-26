@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ekle</title>
+</head>
+<body>
+<h1>Yeni Kayıt</h1>
+<table>
+    <form method="post">
+        {{form.as_table}}
+        {% csrf_token %}
+        <tr>
+            <td colspan="2" style="text-align:center;"><input type="submit" value="Kaydet"/></td>
+        </tr>
+    </form>
+</table>
+</body>
+</html>

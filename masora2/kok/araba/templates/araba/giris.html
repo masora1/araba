@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YBS</title>
+</head>
+<body>
+
+<h1>Arabalar</h1>
+<a href="/ekle" >Ekle</a>
+<table>
+    <tr>
+        <td>Model</td>
+        <td>Ulke</td>
+        <td>Fiyat</td>
+        <td>Km</td>
+        <td>Tarih</td>
+        <td>Sil</td>
+    </tr>
+    {% for araba in  Arabalar %}
+    <tr>
+        <td>{{araba.Model}}</td>
+        <td>{{araba.Ulke}}</td>
+        <td>{{araba.Fiyat}}</td>
+        <td>{{araba.Km}}</td>
+        <td>{{araba.Tarih}}</td>
+        <td><a href="sil/{{araba.id}}">Sil</a></td>
+    </tr>
+{% endfor %}
+
+</table>
+
+
+
+
+</body>
+</html>
